@@ -6,7 +6,7 @@ spec:
   containers:
   - name: kaniko-demo
     image: gcr.io/kaniko-project/executor:latest
-    args: ["--context=https://github.com/cpk777/dzip-backup.git",
+    args: ["--context=git://github.com/cpk777/dzip-backup.git",
             "--destination=chiluka123/dzip-backup",
             "--dockerfile=dockerfile"]
     volumeMounts:
